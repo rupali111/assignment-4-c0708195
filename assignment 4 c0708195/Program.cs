@@ -46,6 +46,22 @@ namespace assignment_4_c0708195
 
             }
         }
+        public void Wordfinder()
+        {
+            int f = 0;
+            foreach (var line in File.ReadAllLines("U:/Users/726031/GitHub/Beowulf/Beowulf.txt"))
+            {
+                if (line.Contains("sea") && line.Contains("fare"))
+                {
+                    f++;
+                }
+
+            }
+            Console.WriteLine(f);
+        }
+
+
+
         public int FindNumberOfBlankSpaces(string line)
         {
             // https://stackoverflow.com/questions/17812566/count-words-and-spaces-in-string-c-sharp
@@ -55,11 +71,11 @@ namespace assignment_4_c0708195
             foreach (char c in line)
             {
                 if (char.IsLetter(c)) { countletters++; }
-                if (char.IsWhiteSpace(c)) { countletters++; }
+                if (char.IsWhiteSpace(c)) { countSpaces++; }
 
             }
             return countSpaces;
-        }
 
+        }
     }
 }
