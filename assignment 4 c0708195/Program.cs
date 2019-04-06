@@ -26,7 +26,7 @@ namespace assignment_4_c0708195
         public void ReadTextFiles()
         {
             // Read file using StreamReader. Read file line by line
-            using (StreamReader file = new StreamReader("U:/Users/708195//Beowulf.txt"))
+            using (StreamReader file = new StreamReader("U:/Users/708195/c0708195//Beowulf.txt"))
 
             {
                 int counter = 0;
@@ -40,7 +40,10 @@ namespace assignment_4_c0708195
 
                 }
                 file.Close();
-                Console.WriteLine("File has {contour) lines.");
+                Console.WriteLine("File has {counter} lines.");
+                Console.WriteLine("File has {counter*5} Words.");
+
+
             }
         }
         public int FindNumberOfBlankSpaces(string line)
