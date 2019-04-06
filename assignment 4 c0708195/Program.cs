@@ -9,7 +9,7 @@ using System.IO;
 
 namespace assignment_4_c0708195
 {
-      class Program
+    class Program
     {
         ArrayList Beowulf;
 
@@ -22,8 +22,8 @@ namespace assignment_4_c0708195
             Console.ReadLine();
         }
         public void Run() { this.ReadTextFiles(); }
-        
-            public void ReadTextFiles()
+
+        public void ReadTextFiles()
         {
             // Read file using StreamReader. Read file line by line
             using (StreamReader file = new StreamReader("U:/Users/708195//Beowulf.txt"))
@@ -45,7 +45,7 @@ namespace assignment_4_c0708195
         }
         public int FindNumberOfBlankSpaces(string line)
         {
-           // https://stackoverflow.com/questions/17812566/count-words-and-spaces-in-string-c-sharp
+            // https://stackoverflow.com/questions/17812566/count-words-and-spaces-in-string-c-sharp
             int countletters = 0;
             int countSpaces = 0;
 
